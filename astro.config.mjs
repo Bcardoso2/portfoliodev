@@ -3,22 +3,14 @@ import tailwind from "@astrojs/tailwind";
 import icon from "astro-icon";
 import { remarkReadingTime } from "./remark-reading-time.mjs";
 import node from "@astrojs/node";
-import vercelServerless from "@astrojs/vercel/serverless";
-
-
-
 
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), icon()],
-  output: "static",
-  // adapter: vercelServerless({
-  //   webAnalytics: {
-  //     enabled: true,
-  //   },
-  //   maxDuration: 10,
-  //   imageService: true
-  // }),
+  output: "server",
+  adapter: node({
+    mode: "standalone",
+  }),
   markdown: {
     remarkPlugins: [remarkReadingTime],
   },
