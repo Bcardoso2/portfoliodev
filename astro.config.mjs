@@ -11,13 +11,13 @@ import vercelServerless from "@astrojs/vercel/serverless";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), icon()],
-  adapter: vercelServerless({
-    webAnalytics: {
-      enabled: true,
-    },
-    maxDuration: 10,
-    imageService: true
-  }),
+  // adapter: vercelServerless({
+  //   webAnalytics: {
+  //     enabled: true,
+  //   },
+  //   maxDuration: 10,
+  //   imageService: true
+  // }),
   markdown: {
     remarkPlugins: [remarkReadingTime],
   },
