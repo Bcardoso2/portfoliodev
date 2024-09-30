@@ -4,13 +4,13 @@ import icon from "astro-icon";
 import { remarkReadingTime } from "./remark-reading-time.mjs";
 import node from "@astrojs/node";
 
-import vercel from "@astrojs/vercel/serverless";
-
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), icon()],
   output: "server",
-  adapter: vercel(),
+  adapter: node({
+    mode: "standalone",
+  }),
   markdown: {
     remarkPlugins: [remarkReadingTime],
   },

@@ -86,8 +86,7 @@ export const aboutPageContent: AboutPageContent = {
   },
   subtitle: "Some information about myself",
   about: {
-    description: `
-My name is Bricio Cardoso, and I’m 24 years old, living in Belém, Brazil. I’m a Fullstack Developer with a deep passion for knowledge and continuous learning. Currently, I’m part of the Devs Norte community, where I actively participate in events and knowledge sharing.<br/><br/>
+    description: `My name is Bricio Cardoso, and I’m 24 years old, living in Belém, Brazil. I’m a Fullstack Developer with a deep passion for knowledge and continuous learning. Currently, I’m part of the Devs Norte community, where I actively participate in events and knowledge sharing.<br/><br/>
 
 Growing up, I was always fascinated by technology, which led me to a career in software development. I enjoy exploring languages and frameworks like Flutter, ReactJS, Python, Docker, and Git. My journey began as a Systems Analyst, where I honed my skills in ERP and HCM solutions.<br/><br/>
 
