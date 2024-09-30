@@ -16,7 +16,8 @@ export default defineConfig({
     webAnalytics: {
       enabled: true,
     },
-    maxDuration: 8,
+    maxDuration: 10,
+    imageService: true
   }),
   markdown: {
     remarkPlugins: [remarkReadingTime],
