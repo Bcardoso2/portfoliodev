@@ -11,6 +11,7 @@ import vercelServerless from "@astrojs/vercel/serverless";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), icon()],
+  output: "static",
   // adapter: vercelServerless({
   //   webAnalytics: {
   //     enabled: true,
